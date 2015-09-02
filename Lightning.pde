@@ -17,7 +17,7 @@ void keyPressed() {
 	if (key == CODED){
 		if (keyCode == UP){
 			fill(0);
-			rect(0,0, 300, 300);
+			rect(0,0, 1200, 500);
 		}
 	}
 }
