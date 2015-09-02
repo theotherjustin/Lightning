@@ -7,7 +7,7 @@
 void setup()
 {
  
-  size(300,300);
+  size(1200,500);
   background(0, 0, 0);
   strokeWeight(2);
 }
@@ -26,7 +26,7 @@ void draw()
 //Randomizes Color and Positions
 stroke((int) (Math.random() * 256),(int) (Math.random() * 256), (int) (Math.random() * 256));
 
-while (endY < 300)
+while (endY < 500)
 	{
 		
 	int zapY = (int)(Math.random() * 9);
@@ -44,7 +44,7 @@ while (endY < 300)
 void mousePressed()
 {
 	
-if(endY>280)
+if(endY> 480)
 {  startX = mouseX;
    startY = 0;
    endX = 150;
