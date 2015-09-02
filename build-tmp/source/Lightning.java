@@ -18,6 +18,7 @@ public class Lightning extends PApplet {
   int startY = 0;
   int endX = 150;
   int endY = 0;
+  int num = 0;
 public void setup()
 {
  
@@ -26,9 +27,17 @@ public void setup()
   strokeWeight(2);
 }
 
-
+public void keyPressed() {
+	if (key == CODED){
+		if (keyCode == UP){
+			fill(0);
+			rect(0,0, 300, 300);
+		}
+	}
+}
 public void draw()
 {
+
 stroke((int) (Math.random() * 256),(int) (Math.random() * 256), (int) (Math.random() * 256));
 
 while (endY < 300)
@@ -43,14 +52,19 @@ while (endY < 300)
 	startY = endY;
 }
 
+
 }
 public void mousePressed()
 {
+	num = num+ 1;
 if(endY>280)
 {  startX = mouseX;
    startY = 0;
    endX = 150;
-   endY = 0;}
+   endY = 0;
+}
+
+
 }
 
   static public void main(String[] passedArgs) {
